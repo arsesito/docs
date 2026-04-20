@@ -1,0 +1,21 @@
+# Local Development Artifacts
+
+# Node modules
+node_modules/
+
+# Operating System files
+.DS_Store
+
+# Log files
+*.log
+
+# Distribution and Build artifacts
+dist/
+build/
+
+# Environment variables
+.env.local
+
+# IDE directories
+.vscode/
+.idea/
