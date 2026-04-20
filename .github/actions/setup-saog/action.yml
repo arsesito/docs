@@ -1,10 +1,1 @@
-name: "Setup SAOG Action"
-description: "A GitHub Action to set up SAOG environment."
-inputs:
-  exampleInput:
-    description: "An example input for the action."
-    required: true
-runs:
-  using: "docker"
-  image: "Dockerfile"
-  entrypoint: "entrypoint.sh"
+name: 'Setup SAOG Action'\ndescription: 'This action sets up the SAOG environment.'\n\n# Inputs\ninputs:\n  example-input:\n    description: 'An example input.'\n    required: true\n    default: 'default value'\n\n# Outputs\noutputs:\n  example-output:\n    description: 'An example output.'\n\n# Runs\nruns:\n  using: 'node12'\n  steps:\n    - name: Check out repository\n      uses: actions/checkout@v2\n    - name: Setup SAOG\n      run: |\n        echo 'Setting up SAOG...'\n\n# Branding\nbranding:\n  icon: 'check-circle'\n  color: 'blue'\n\n# Documentation\n# Visit https://example.com/docs for detailed information about this action.
